@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Project 2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/styles/style.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.9/sweetalert2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.9/sweetalert2.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.slim.min.map"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container" id="navbar">
+      <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <a href="#navbar" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+          <img src="src/images/oddo.png" alt="" style="width: 100px; height: 30px;" class="mt-2">
+        </a>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#navbar" class="nav-link px-2 link-secondary">Home</a></li>
+          <li><a href="#features" class="nav-link px-2 link-dark">Features</a></li>
+          <li><a href="#pricing" class="nav-link px-2 link-dark">Pricing</a></li>
+          <li><a href="#about" class="nav-link px-2 link-dark">About</a></li>
+          <li><a href="#contact" class="nav-link px-2 link-dark">Contact</a></li>
+        </ul>
+
+        <div class="col-md-3 text-end">
+          <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Login</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#exampleModal2">Sign-up</button>
+        </div>
+      </header>
+    </div>
+  </header>
+  <main>
+    <div class="container p-5 mt-5 rounded" style="background-color: #009b4c ;">
+      <div class="row">
+        <div class="col mb-5">
+          <h1 class="text-white">Oddo Official Website</h1>
+          <h4 class="text-white">Inspiration Ahead Us</h4>
+          <p class="mt-3 text-white fs-5">Smart and Connected</p>
+          <img src="src/images/mobil.png"
+            class="animate__animated animate__lightSpeedOutRight animate__infinite infinite" alt=""
+            style="width: 150px;">
+          <div>
+            <div id="typing">Faster than<span> Competitors</span></div>
+            <div id="line">|</div>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="d-flex">
+            <div class="container bg-light ms-0 rounded-4 text-center" style="width: 200px; height: 130px;">
+              <img class="mt-2" src="src/images/verified.png" style="width: 90px; height: 85px;">
+              <p class="my-auto">Terpercaya</p>
+            </div>
+
+            <div class="container bg-light ms-2 rounded-4 d-flex align-items-center"
+              style="width: 280px; height: 90px;">
+              <img class="mt-1 mx-auto" src="src/images/dofans.png" style="width: 60px; height: 55px;">
+              <p class="my-auto ms-2">100++ millions Dofans in Indonesia</p>
+            </div>
+          </div>
+          <div class="d-flex ">
+            <div class="container d-flex bg-light ms-0 rounded-4 mt-3" style="width: 320px; height: 70px;">
+              <img class="mt-1" src="src/images/new.png" style="width: 60px;">
+              <p class="my-auto">20 Produk per tahunnya</p>
+            </div>
+
+            <div class="container bg-light ms-0 rounded-4 align-items-center ms-3 text-center"
+              style="width: 280px; height: 230px;">
+              <img class="mt-3 mx-auto" src="src/images/time.png" style="width: 100px; height: 90px;">
+              <p class="my-auto ms-2">Sudah menemani teknologi Indonesia selama 13 Tahun</p>
+            </div>
+          </div>
+          <div class="container bg-light ms-0 rounded-4 d-flex flex-column"
+            style="width: 210px; height: 150px; margin-top: -115px;">
+            <img class="mt-1 mx-auto" src="src/images/garansi.png" style="width: 60px; height: 55px;">
+            <p class="text-sm-center">Jaminan garansi panjang pada setiap produk</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <h2 class="mt-5 pt-5 text-center text-success" id="features">The Best Features from Oddo</h2>
+    <div class="container col-xl-8 px-4 py-2">
+      <div class="row flex-lg-row align-items-center g-5 py-5">
+        <div class="col-12 col-sm-10 col-lg-7">
+          <div class="rounded-4 mt-2 p-2" style="background-color: #00b94c ;">
+            <div class="m-2 rounded-4 p-2" style="width:auto ; background-color: #86eaae;">
+              <div class="d-flex justify-content-end">
+                <img src="src/images/chipset.jpg" class="p-2 rounded-4 mt-1" style="width: 220px; height: 160px;">
+                <div>
+                  <h5 class=" mt-3 text-center">Snapdragonfly kelas atas</h5>
+                  <p class="text-center">Performa ngebut dengan skor AnTuTu 1 juta++</p>
+                </div>
+              </div>
+            </div>
+            <div class="m-3 rounded-4 p-2" style="width:auto ; background-color: #86eaae;">
+              <div class="d-flex justify-content-end">
+                <div>
+                  <h5 class="mt-3 text-center">Sensor terbaru dari Sorry</h5>
+                  <p class="text-center">Dengan OIS dan 100x zoom</p>
+                </div>
+                <div>
+                  <img src="src/images/sensor.jpg" class="p-2 rounded-4 mt-1" style="width: 220px; height: 160px;">
+                </div>
+              </div>
+            </div>
+            <div class="m-2 rounded-4 p-2" style="width:auto ; background-color: #86eaae;">
+              <div class="d-flex justify-content-end">
+                <img src="src/images/ram.jpg" class="p-2 rounded-4 mt-1" style="width: 220px; height: 160px;">
+                <div>
+                  <h5 class="mt-3 text-center">Ram terbesar dikelasnya</h5>
+                  <p class="text-center">Multi tasking lebih lancar tanpa crash</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 px-5">
+          <h2 class="text-center">To the Future with Us</h2>
+          <h3 class="mt-5">Experience every moment with oddo smart imaging</h3>
+          <p class="mt-3 fs-5">
+            Imaging technology is an area to wich oddo is deeply committed. oddo has also continuedto explore new
+            boundaries in smart imaging.
+          </p>
+          <a href="#pricing" class="text-decoration-none">
+            <h1 class="mt-3 text-success text-center letsgo">Let's GO!</h1>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container p-5 mt-5 rounded" style="background-color: #00b94c ;">
+      <div class="row">
+        <div class="col-4" style="margin-right: -25px;">
+          <div class="container rounded-4 d-flex align-items-center"
+            style="width: 350px; height: 100px; margin-top: 38px;">
+            <img class="mt-1 mx-auto rounded-2" src="src/images/hape.png" style="width: 220px; height: 200px;">
+          </div>
+          <div class="container bg-light rounded-4 d-flex align-items-center ms-3"
+            style="width: 350px; height: 125px; margin-top: 100px;">
+            <img class="mt-1 mx-auto rounded-2" src="src/images/design.jpg" style="width: 110px; height: 90px;">
+            <p class="my-auto ms-2">Design fresh setiap tahun</p>
+          </div>
+          <div class="container bg-light rounded-4 mt-3" style="width: 80px; height: 70px; margin-right: 13px;">
+            <img class="mt-2 ms-0" src="src/images/rom.jpg" style="width: 55px; height: 50px;">
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="d-flex">
+            <div class="container bg-light mx-0 rounded-4" style="width: 80px; height: 70px;">
+              <img class="mt-1 rounded-2" src="src/images/sirkuit.png" style="width: 60px; height: 55px;">
+            </div>
+            <div class="container bg-light rounded-4 d-flex align-items-center ms-3"
+              style="width: 400px; height: 130px;">
+              <img class="mt-1 ms-2 rounded-2" src="src/images/ui.png" style="width: 130px; height: 100px;">
+              <p class="my-auto ms-2">Dengan UI terbaru V2.1</p>
+            </div>
+          </div>
+          <div class="d-flex ">
+            <div class="container bg-light mx-0 rounded-4 d-flex flex-column mt-3 text-center"
+              style="width: 320px; height: 200px;">
+              <img class="mt-3 rounded-2 mx-auto " src="src/images/charging.jpg" style="width: 180px;">
+              <p class="my-auto">Fast Charging Up to 120 Watt</p>
+            </div>
+
+            <div class="container bg-light ms-3 mt-3 rounded-4 d-flex align-items-center ms-3"
+              style="width: 350px; height: 125px;">
+              <img class="mx-auto rounded-2" src="src/images/nfc.jpg" style="width: 110px; height: 90px;">
+              <p class="my-auto ms-2">Dilengkapi dengan NFC multifungsi</p>
+            </div>
+          </div>
+          <div class="container bg-light ms-0 rounded-4 d-flex flex-column mt-3 ms-5"
+            style="width: 400px; height: 130px; margin-top: 13px;">
+            <img class="mt-3 mx-auto rounded-2" src="src/images/baterai.jpg" style="width: 150px; height: 65px;">
+            <p class="mt-2 text-center">Dengan baterai yang lebih besar</p>
+          </div>
+
+          <div class="d-flex">
+            <div class="container bg-light ms-0 rounded-4 d-flex flex-column mt-3"
+              style="width: 180px; height: 190px; margin-top: 13px;">
+              <img class="mt-3 mx-auto rounded-2" src="src/images/kaca.jpg" style="width: 150px; height: 100px;">
+              <p class="text-center">proteksi layar kingkong glass victus</p>
+            </div>
+            <div class="d-flex align-items-center me-5">
+              <img class="mx-auto hand" src="src/images/pngegg.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="container p-5 mt-5 rounded text-center border-bottom" id="pricing">
+        <div class="p-3">
+          <h1 class="mb-3">Promo Terbaru</h1>
+          <p class="fs-5 text-muted">Kami menawarkan harga yang kompetitif di pasar.</p>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 mb-3">
+          <div class="col">
+            <div class="card mb-4 rounded-3 p-3 phone-card border-0">
+              <div>
+                <img src="src/images/19151a63-6e83-4008-9a09-b53ae21735e0.jpg" class="card-img-top w-75"
+                  alt="Oddo Ranu8 Zet">
+                <div class="card-body">
+                  <h5 class="card-title">Oddo Ranu8 Zet 5G</h5>
+                  <p class="card-text"><strike class="text-muted">Rp3.999.000,00</strike> Rp2.999.000,00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 p-3 phone-card border-0">
+              <div>
+                <img src="src/images/a325e8cd-22a9-43cc-9038-f0eea76d428b.jpg" class="card-img-top w-75" alt="Oddo P69">
+                <div class="card-body">
+                  <h5 class="card-title">Oddo P69</h5>
+                  <p class="card-text"><strike class="text-muted">Rp3.399.000,00</strike> Rp2.699.000,00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 p-3 phone-card border-0">
+              <div>
+                <img src="src/images/Oppo-A17-blue-500x500.jpg" class="card-img-top w-75" alt="Oddo AK-17">
+                <div class="card-body">
+                  <h5 class="card-title">Oddo AK-17</h5>
+                  <p class="card-text"><strike class="text-muted">Rp3.799.000,00</strike> Rp3.299.000,00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 p-3 phone-card border-0">
+              <div>
+                <img src="src/images/5f2b7affc1369.jpg" class="card-img-top w-75" alt="Oddo Nanya">
+                <div class="card-body">
+                  <h5 class="card-title">Oddo Nanya</h5>
+                  <p class="card-text"><strike class="text-muted">Rp6.899.000,00</strike> Rp6.199.000,00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 p-3 phone-card border-0">
+              <div>
+                <img src="src/images/s-l500.jpg" class="card-img-top w-75" alt="Oddo Ranu7">
+                <div class="card-body">
+                  <h5 class="card-title">Oddo Ranu7 + Black Case</h5>
+                  <p class="card-text"><strike class="text-muted">Rp3.000.000,00</strike> Rp2.499.000,00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 p-3 phone-card border-0">
+              <div>
+                <img src="src/images/Oppo-A95-5G-Blue.jpg" class="card-img-top w-75" alt="Oddo P59">
+                <div class="card-body">
+                  <h5 class="card-title">Oddo P59</h5>
+                  <p class="card-text"><strike class="text-muted">Rp3.299.000,00</strike> Rp2.599.000,00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 p-3 phone-card border-0">
+              <div>
+                <img src="src/images/mofi-flexi-slim-carbon-fibre-case-for-oppo-a76-brushed-red_m.jpg"
+                  class="card-img-top w-75" alt="Oddo P67">
+                <div class="card-body">
+                  <h5 class="card-title">Oddo P67 + Red Case</h5>
+                  <p class="card-text"><strike class="text-muted">Rp3.099.000,00</strike> Rp2.499.000,00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 p-3 phone-card border-0">
+              <div>
+                <img src="src/images/480be083-d2a2-4548-bf9c-6745268d606f.jpg" class="card-img-top w-75"
+                  alt="Oddo Ranu5">
+                <div class="card-body">
+                  <h5 class="card-title">Oddo Ranu5</h5>
+                  <p class="card-text"><strike class="text-muted">Rp4.599.000,00</strike> Rp4.199.000,00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container p-5 mt-5 text-center rounded-4 border-bottom" style="background-color: #009b4c">
+        <div class="p-3">
+          <h1 class="mb-3 text-white">Langganan</h1>
+          <p class="fs-5 text-white">Berlangganan untuk mendapatkan bonus menarik lainnya.</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-5 shadow border-success">
+              <div class="card-header py-3 bg-transparent">
+                <h3 class="my-0 fw-normal">Free</h3>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">Rp0<small class="text-muted fw-light">/bln</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Bonus setiap empat bulan</li>
+                  <li>Akses ke layanan servis</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-5 shadow border-warning">
+              <div class="card-header py-3 bg-transparent">
+                <h3 class="my-0 fw-normal">Pro</h3>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">Rp40.000<small class="text-muted fw-light">/bln</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Bonus setiap dua bulan</li>
+                  <li>Akses sneak peak produk terbaru</li>
+                  <li>Akses ke layanan servis</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-success rounded-5" onclick="Swal.fire({
+                  position: 'center',
+                  icon: 'success',
+                  title: 'Berhasil berlangganan pro!',
+                  showConfirmButton: false,
+                  timer: 1500
+                });">Mulai Berlangganan</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-5 shadow border-primary">
+              <div class="card-header py-3 bg-transparent">
+                <h3 class="my-0 fw-normal">Enterprise</h3>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">Rp70.000<small class="text-muted fw-light">/bln</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Bonus setiap dua bulan</li>
+                  <li>Akses sneak peak produk terbaru</li>
+                  <li>Akses ke layanan servis</li>
+                  <li>Pengguna prioritas</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-success rounded-5" onclick="Swal.fire({
+                  position: 'center',
+                  icon: 'success',
+                  title: 'Berhasil berlangganan enterprise!',
+                  showConfirmButton: false,
+                  timer: 1500
+                });">Mulai Berlangganan</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white" id="about">
+      <div class="py-5 text-center container my-5">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Tentang Kami</h1>
+            <p class="lead">
+              Oddo merupakan perusahaan yang bergerak di bidang teknologi, yang memiliki visi untuk menjadi perusahaan
+              revolusioner yang senantiasa menghasilkan manfaat bagi semua pihak. Oddo memiliki komitmen untuk mengikuti
+              segala ketentuan yang berlaku, baik secara tertulis maupun tidak tertulis, serta menegaskan sikap yang
+              menjunjung tinggi moralisme bagi semua pihak yang terkait dengan internal perusahaan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container p-5 py-5 rounded border-bottom">
+        <h2 class="mb-4 text-center">Mengenal CEOs Kami</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-3 py-5">
+          <div class="col">
+
+          </div>
+          <div>
+            <div class="col">
+              <div class="card border-0 profile-card">
+                <img src="src/images/nama.png" class="card-img-top" alt="Rizqi MKS" loading="lazy">
+                <div class="card-body">
+                  <h5 class="card-title">Rizqi Muhammad KS</h5>
+                  <ul>
+                    <li>Chief Executive Officer [2022-Sekarang]</li>
+                    <li>Kepala Departemen Pengembangan [2022-Sekarang]</li>
+                  </ul>
+                  <a href="#" class="fs-5"><i class="bi bi-linkedin text-primary"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="col">
+              <div class="card border-0 profile-card">
+                <img src="src/images/nama2.jpg" class="card-img-top" alt="Naufal Asyraf" loading="lazy">
+                <div class="card-body">
+                  <h5 class="card-title">Naufal Asyraf</h5>
+                  <ul>
+                    <li>Chief Executive Officer [2022-Sekarang]</li>
+                    <li>Tech Lead [2022-Sekarang]</li>
+                  </ul>
+                  <a href="#" class="fs-5"><i class="bi bi-linkedin text-primary"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="arrow-class">
+      <a href="#navbar"><img src="src/images/arrow-symbol-27365.png" alt="panah" class="arrow rounded-4 shadow"></a>
+    </div>
+  </main>
+  <footer>
+    <div id="contact" class="pt-1">
+      <div class="container bg-white p-5 mt-5 rounded-5 text-center shadow-sm">
+        <h1 class="mb-3">Mari tetap tehubung dengan Oddo</h1>
+        <p id="contact-text" class="lead mb-3">Dapatkan berita terbaru, pembaruan, diskon, dan lain-lain setiap
+          minggunya.
+        </p>
+        <form class="input-group input-group-lg mb-3">
+          <input type="text" class="form-control" placeholder="Masukkan akun email-mu" aria-label="User's email">
+          <button class="btn btn-outline-secondary" type="button"><i class="bi bi-arrow-bar-right" width="20px"
+              height="20px" onclick="Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Alamat email berhasil terkirim!',
+                showConfirmButton: false,
+                timer: 1500
+              });"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="bg-white">
+      <div class="container mt-5">
+        <footer class="row row-cols-2 row-cols-sm-2 row-cols-md-5 py-5">
+          <div class="col mb-3">
+            <a href="#" class="d-flex align-items-center mb-3 link-dark text-decoration-none fs-5 fw-bold">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                class="bi bi-app-indicator" viewBox="0 0 16 16">
+                <path
+                  d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z" />
+                <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              </svg>
+              &nbsp; Oddo
+            </a>
+            <p class="text-muted">
+              Base in Indonesia
+            </p>
+          </div>
+
+          <div class="col mb-3">
+            <h5>Smartphone</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Oddo Ranu 8 Series</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Oddo P69</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Oddo AK-17</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Oddo Nanya</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Oddo Ranu7</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Oddo P59</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Oddo P67</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Oddo Ranu5 Marvel Edition</a></li>
+            </ul>
+          </div>
+
+          <div class="col mb-3">
+            <h5>Produk</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Smartphone</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Laptop <span
+                    style="font-size: 12px">(Segera Hadir)</span></a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tablet <span
+                    style="font-size: 12px">(Segera Hadir)</span></a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mouse & Keyboard <span
+                    style="font-size: 12px">(Segera Hadir)</span></a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Headset <span
+                    style="font-size: 12px">(Segera Hadir)</span></a></li>
+            </ul>
+          </div>
+
+          <div class="col mb-3">
+            <h5>Tentang Kami</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Perusahaan</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tim</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Teknologi</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sejarah Karier</a></li>
+            </ul>
+          </div>
+
+          <div class="col mb-3">
+            <h5>Dukungan</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Dapatkan Bantuan</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hubungi Kami</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Syarat Layanan</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Syarat dan Ketentuan</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <div class="container mt-5 border-top">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mx-5">
+        <p class="col-md-4 mb-0 text-muted">Copyright © <span id="date"></span> Oddo - All rights reserved</p>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="https://github.com/mksdesuyo/final-project-2" target="_blank"
+              rel="noopener noreferrer" class="nav-link px-2 fs-5"><i class="bi bi-github text-dark"></i></a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 fs-5"><i class="bi bi-facebook text-primary"></i></a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 fs-5"><i class="bi bi-twitter text-info"></i></a></li>
+        </ul>
+      </footer>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Masuk</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <!-- Email input -->
+            <h2 class="text-center">Selamat Datang</h2>
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form2Example1">Alamat Email</label>
+              <input type="email" id="form2Example1" class="form-control" placeholder="masukkan alamat email" />
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form2Example2">Password</label>
+              <input type="password" id="form2Example2" class="form-control" placeholder="masukkan password" />
+            </div>
+
+            <!-- 2 column grid layout for inline styling -->
+            <div class="row mb-4">
+              <div class="col d-flex justify-content-center">
+                <!-- Checkbox -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                  <label class="form-check-label" for="form2Example31"> Remember me </label>
+                </div>
+              </div>
+
+              <div class="col">
+                <!-- Simple link -->
+                <a href="#!">Forgot password?</a>
+              </div>
+            </div>
+
+            <!-- Submit button -->
+            <button id="loginkan" type="button" data-bs-dismiss="modal"
+              class="btn btn-primary btn-block mb-4 rounded-5 w-100 text-center" onclick="Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Login berhasil!',
+                showConfirmButton: false,
+                timer: 1500
+              });">Login</button>
+
+            <!-- Register buttons -->
+            <div class="text-center">
+              <p>Not a member? <a href="#examplemodal2" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal2">Register</a></p>
+              <p>or sign up with:</p>
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-facebook-f"></i>
+              </button>
+
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-google"></i>
+              </button>
+
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-twitter"></i>
+              </button>
+
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-github"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Buat Akun Baru</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <!-- Email input -->
+            <h2 class="text-center">Selamat Datang</h2>
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form2Example1">Alamat Email</label>
+              <input type="email" id="form2Example1" class="form-control" placeholder="example123@oddo.com" />
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form2Example2">Masukkan Password Baru</label>
+              <input type="password" id="form2Example2" class="form-control"
+                placeholder="minimal 6 karakter huruf besar dan kecil" />
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form2Example2">Masukkan Password sekali lagi</label>
+              <input type="password" id="form2Example2" class="form-control" placeholder="******" />
+            </div>
+
+            <!-- 2 column grid layout for inline styling -->
+            <div class="row mb-4">
+              <div class="col d-flex justify-content-center">
+                <!-- Checkbox -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                  <label class="form-check-label" for="form2Example31"> Remember me </label>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Submit button -->
+            <button id="loginkan" type="button" data-bs-dismiss="modal"
+              class="btn btn-primary btn-block mb-4 rounded-5 w-100 text-center" onclick="Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Akun Berhasil dibuat!',
+                showConfirmButton: false,
+                timer: 1500
+              });">Daftar</button>
+
+            <!-- Register buttons -->
+            <div class="text-center">
+              <p>or sign up with:</p>
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-facebook-f"></i>
+              </button>
+
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-google"></i>
+              </button>
+
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-twitter"></i>
+              </button>
+
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-github"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.9/sweetalert2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.9/sweetalert2.all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.9/sweetalert2.all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+  <script src="src/scripts/script.js"></script>
+</body>
+
+</html>
